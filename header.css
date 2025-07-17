@@ -1,0 +1,136 @@
+.header {
+    background-color: rgb(38, 38, 38);
+    color: #fafafa;
+    padding: 5px 20px;
+}
+.header,.navbar{
+    width: 100%;
+}
+#header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-button {
+    background-color: green;
+    border-color: green;
+    color: #fafafa;
+    border-radius: 5px;
+}
+/* Logo */
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+#header-logo {
+    height: 45px;
+    width: 100px;
+    padding-left: 20px;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 0 30px;
+    height: 60px;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li a {
+    color: rgb(28, 27, 27);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-icons a {
+    color: white;
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+.navbar-icons a:hover,
+.navbar-menu li a:hover {
+    color: #ff9800;
+}
+
+/* Dropdown */
+.navbar-menu li.dropdown,
+.navbar-menu li.dropdown-submenu {
+    position: relative;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Dropdown 1 */
+.navbar-menu > li.dropdown > .dropdown-menu {
+    top: 100%;
+    left: 0;
+}
+
+/* Dropdown 2*/
+.navbar-menu li.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+}
+
+
+.navbar-menu li.dropdown:hover > .dropdown-menu,
+.navbar-menu li.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Css cho list trong dropdown*/
+.dropdown-menu li a {
+    color: #333;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*Mau nen cho dropdown */
+.dropdown-menu li a:hover {
+    background: #eee;
+}
+/* Search-img */
+.navbar-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#search-icon-img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+/* Cart-img */
+#cart-icon-img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
