@@ -1,0 +1,38 @@
+h1{
+    font-size: 50px;
+}
+p{
+    color: #008000;
+    line-height: 1.5; /* khoang cach giua cac dong */
+    /* line-height: 150%; */ /* co the dung % thay cho so */
+    text-align: justify; /* Can le hai ben */
+    font-family: Arial, sans-serif; /* Font chu */
+    font-weight: 400; /* Font dam - default =400, bold =700*/
+    text-decoration:none; /* gach chan chu */
+    text-transform: uppercase; /* viet hoa - co the dung trong truong hop can viet hoa nhung nguoi dung nhap khong dung */
+    letter-spacing:normal; /* khoang cach giua cac chu cai */
+    word-spacing:normal; /* khoang cach giua cac tu */
+    font-style: normal; /* in nghieng */
+    font-variant: normal; /* viet hoa dau */
+    font-size: 16px; /* kich thuoc chu */
+    margin: 10px 0; /* khoang cach tren duoi, trai phai */
+    padding:0% /* khoang cach giua cac doan */
+    text-indent: 5px; /* khoang cach dau dong */
+    text-align: center; /* can giua */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* bong chu */
+    background-color: #f0f0f0; /* mau nen */
+    border: 1px solid #ccc; /* duong vien */
+    border-radius: 5px; /* bo vien - lam vien tron*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* bong doan van ban */
+    border-bottom: 2px solid #008000; /* duong vien duoi */
+}
+a{
+    color: blue;
+    text-decoration:none;
+}
+body{
+    background-image: url(); /* khong co hinh nen */
+    background-repeat: repeat; /* lap lai hinh nen */
+    background-size: cover;
+}
