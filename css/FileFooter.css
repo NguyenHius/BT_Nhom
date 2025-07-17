@@ -50,7 +50,7 @@ body {
 
 .footer-form {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     align-items: center;
     flex-grow: 1;
     max-width: 500px;
