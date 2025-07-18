@@ -1,7 +1,7 @@
 .header {
     background-color: rgb(38, 38, 38);
     color: #fafafa;
-    padding: 5px 20px;
+    padding: 10px 20px 1px 20px;
 }
 .header,.navbar{
     width: 100%;
@@ -12,29 +12,35 @@
     align-items: center;
 }
 #header-button {
-    background-color: green;
-    border-color: green;
+    background-color: #7db500;
+    border-color: #7db500;
     color: #fafafa;
     border-radius: 5px;
+    padding: 9px 22px;
+    font-weight: bold;
+}
+#header-button:hover {
+    background-color: #699e009f;
+    border-color: #699e009f;
+    color: #fafafa;
 }
 /* Logo */
 #logo {
     font-size: 24px;
-    font-weight: bold;
     color: #fafafa;
     font-family: 'Roboto', sans-serif;
 }
 #header-logo {
     height: 45px;
-    width: 100px;
-    padding-left: 20px;
+    width: 120px;
+    padding-left: 10px;
 }
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
+    background-color: rgba(216, 234, 250, 0.726);
     padding: 0 30px;
     height: 60px;
 }
@@ -48,13 +54,16 @@
     gap: 30px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    justify-content: center;
 }
 
 .navbar-menu li a {
     color: rgb(28, 27, 27);
     text-decoration: none;
     font-weight: 500;
+    display: block;
+    padding: 20px 20px;
 }
 
 .navbar-icons a {
@@ -65,7 +74,7 @@
 
 .navbar-icons a:hover,
 .navbar-menu li a:hover {
-    color: #ff9800;
+    color: green;
 }
 
 /* Dropdown */
@@ -117,20 +126,27 @@
 .dropdown-menu li a:hover {
     background: #eee;
 }
-/* Search-img */
+/* ICONS */
 .navbar-icons{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 0px;
+    justify-content: right;
 }
+/* Search-img */
+
 #search-icon-img {
     width: 16px;
     height: 16px;
-    margin-right: 10px;
+    margin-right: 2px;
 }
 /* Cart-img */
 #cart-icon-img {
     width: 16px;
     height: 16px;
-    margin-right: 10px;
+    margin-right: 0px;
+}
+.cart-container a{
+    text-decoration: none;
+    color: #000;
 }

@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/header.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/header.css" />
     <title>Demo layout</title>
 </head>
-<body>
-    <header class="header container">  
-        <p id="header-content">
-            <span id="logo">G2 Market</span>
-            <Span><button id="header-button">Buy now</button></Span>
-        </p>
 
+<body>
+    <header class="header container">
+        <p id="header-content">
+            <span id="logo"><b>G2</b> Market</span>
+            <span><button id="header-button">Buy now</button></span>
+        </p>
     </header>
     <nav class="navbar three-column container">
         <div class="navbar-logo a-left">
-            <img src="img/logo/logo.png" id="header-logo" alt="Logo" />
+            <img src="../img/logo/logo.png" id="header-logo" alt="Logo" />
         </div>
         <div class="content">
             <ul class="navbar-menu">
@@ -28,7 +30,7 @@
                 <ul class="navbar-menu">
                     <!-- Dropdown 1 -->
                     <li class="dropdown">
-                        <a href="#">SHOP</a>
+                        <a href="#">SHOP <span class="arrow">&#5121;</span></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
                                 <a href="#">Fruits</a>
@@ -39,23 +41,30 @@
                                     <li><a href="#">Banana</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Vegetables</a></li>
+                            <li class="dropdown-submenu">
+                                <a href="#">Vegetables</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Spinach</a></li>
+                                    <li><a href="#">Carrot</a></li>
+                                    <li><a href="#">Zucchini</a></li>
+                                    <li><a href="#">Broccoli</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Organic Juices</a></li>
+                            <li><a href="#">Today's Deals</a></li>
                             <li><a href="#">Drinks</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="navbar-menu">
                     <li class="dropdown">
-                        <a href="#">PAGES</a>
+                        <a href="#">PAGES <span class="arrow">&#5121;</span></a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-submenu">
-                                <a href="#">Product</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Product 1</a></li>
-                                    <li><a href="#">Product 2</a></li>
-                                    <li><a href="#">Product 3</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Production Standards</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
                             <li class="dropdown-submenu">
                                 <a href="#">About Us</a>
                                 <ul class="dropdown-menu">
@@ -67,26 +76,42 @@
                         </ul>
                     </li>
                 </ul>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">BLOG</a></li>
+                <li class="dropdown">
+                    <a href="#">FEATURES <span class="arrow">&#5121;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Fast Delivery</a></li>
+                        <li><a href="#">Quality Assurance</a></li>
+                        <li><a href="#">Seasonal Produce</a></li>
+                        <li><a href="#">Storage Guide</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">BLOG <span class="arrow">&#5121;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Healthy Eating Tips</a></li>
+                        <li><a href="#">Vegetable Recipes</a></li>
+                        <li><a href="#">Customer Stories</a></li>
+                        <li><a href="#">Promotions & Events</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
         <div class="a-right navbar-icons">
             <div class="search-container">
-                <input type="text" placeholder="Search..." id="search-input">
+                <input type="text" placeholder="Search..." id="search-input" />
                 <label for="search-input" class="search-icon">
-                    <img src="img/icons/search.png" alt="search icon" id="search-icon-img">
+                    <img src="../img/icons/search.png" alt="search icon" id="search-icon-img" />
                 </label>
             </div>
             <div class="cart-container">
                 <a href="#">
-                    <img src="img/icons/shopping-cart.png" alt="cart icon" id="cart-icon-img">
+                    <img src="../img/icons/shopping-cart.png" alt="cart icon" id="cart-icon-img" />
                     <span class="cart-count">0</span>
                 </a>
             </div>
         </div>
     </nav>
-
 </body>
+
 </html>
