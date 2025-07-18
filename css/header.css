@@ -29,10 +29,11 @@
     font-size: 24px;
     color: #fafafa;
     font-family: 'Roboto', sans-serif;
+    color: rgb(102, 163, 32);
 }
 #header-logo {
     height: 45px;
-    width: 120px;
+    width: 140px;
     padding-left: 10px;
 }
 /* Navbar */
@@ -41,7 +42,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(216, 234, 250, 0.726);
-    padding: 0 30px;
+    padding: 40px 30px;
     height: 60px;
 }
 
