@@ -1,11 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Organie - Nông sản hữu cơ</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/content2.css" />
+    <link rel="stylesheet" href="css/content3.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/FileFooter.css" />
 </head>
+
 <body>
-    
+    <!-- Header + Nav -->
+    <header class="header">
+        <p id="header-content">
+            <span id="logo"><b>G2</b> Market</span>
+            <span><button id="header-button">Buy now</button></span>
+        </p>
+    </header>
+    <nav class="navbar three-column">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <!-- Nút ☰ chỉ hiển thị khi menu chưa mở -->
+    <label for="menu-toggle" class="menu-icon open">&#9776;</label>
+
+    <div class="navbar-logo a-left">
+        <img src="img/logo/logo.png" id="header-logo" alt="Logo" />
+    </div>
+
+    <div class="content">
+        <ul class="navbar-menu">
+            <!-- Nút ✕ nằm trong menu, chỉ hiện khi menu mở -->
+            <label for="menu-toggle" class="menu-icon close">&times;</label>
+
+            <li><a href="#">HOME</a></li>
+
+            <li class="dropdown">
+                <a href="#">SHOP</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a href="#">Fruits</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Orange</a></li>
+                            <li><a href="#">Banana</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Vegetables</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Spinach</a></li>
+                            <li><a href="#">Carrot</a></li>
+                            <li><a href="#">Zucchini</a></li>
+                            <li><a href="#">Broccoli</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Organic Juices</a></li>
+                    <li><a href="#">Today's Deals</a></li>
+                    <li><a href="#">Drinks</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">PAGES</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Production Standards</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">FEATURES</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Fast Delivery</a></li>
+                    <li><a href="#">Quality Assurance</a></li>
+                    <li><a href="#">Seasonal Produce</a></li>
+                    <li><a href="#">Storage Guide</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">BLOG</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Healthy Eating Tips</a></li>
+                    <li><a href="#">Vegetable Recipes</a></li>
+                    <li><a href="#">Customer Stories</a></li>
+                    <li><a href="#">Promotions & Events</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="a-right navbar-icons">
+        <div class="search-container">
+            <input type="text" placeholder="Search..." id="search-input" />
+            <label for="search-input" class="search-icon">
+                <img src="img/icons/search.png" alt="search icon" id="search-icon-img" />
+            </label>
+        </div>
+        <div class="cart-container">
+            <a href="#">
+                <img src="img/icons/shopping-cart.png" alt="cart icon" id="cart-icon-img" />
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+    <main class="section main">
+        <!-- Content 2 -->
+        <div class="container">
+            <section class="farmservices">
+                <h2>FARM SERVICES</h2>
+                <h4><i>- The best services for you -</i></h4>
+                <div>
+                    <b>Organic Products</b>
+                    <hr class="hr1">
+                    <p>We offer the season's best mix of 100% certified-organic produce and hand-crafted farm products
+                    </p>
+                    <a href="#"><i>Read more</i></a>
+                </div>
+                <div>
+                    <b>RFS Machines</b>
+                    <br>
+                    <hr class="hr1">
+                    <p>Tractors, combines, forage harvesters, balers, mower conditioners, sprayers, trailers,… All is
+                        for hired</p>
+                    <a href="#"><i>Read more</i></a>
+                </div>
+                <div>
+                    <b>Food Strategy</b>
+                    <br>
+                    <hr class="hr1">
+                    <p>Create a broader network of organizations & businesses contributing to our food system</p>
+                    <a href="#"><i>Read more</i></a>
+                </div>
+                <div>
+                    <b>Water Management</b>
+                    <br>
+                    <hr class="hr1">
+                    <p>Minimize water costs and efficiently distribute water, help farmers see improvements in yields
+                    </p>
+                    <a href="#"><i>Read more</i></a>
+                </div>
+
+                <img src="img/about_v1_9.jpg " alt="">
+            </section>
+        </div>
+
+        <div class="container">
+            <div class="dealoftheday">
+                <div class="d-a">
+                    <img src="img/object-04.jpg" alt="Vitamin C Face Wash">
+                    <div class="price-tag">Only<br>15.00$</div>
+                </div>
+                <div class="d-b">
+                    <h2>DEAL OF THE DAY</h2>
+                    <h4><em>Vitamin C Face Wash</em></h4>
+                    <p>
+                        The Vitamin C Face Wash is the initial step in your skincare regimen and is the first step
+                        towards perfect skin. Loads of antioxidants, natural citrus oils.
+                    </p>
+                    <div class="add-to-cart">
+                        <a href="#">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content 3 -->
+        <section class="testimonial">
+            <div class="avatar">
+                <img src="images/lamtruong.jpg" />
+            </div>
+            <h2>THE BEST ORGANIC STORE!</h2>
+            <p class="quote">
+                Cảm ơn vì những sản phẩm tuyệt vời bạn giao mỗi tuần… <br>
+                Tôi đã giới thiệu cho tất cả mọi người về cửa hàng thực phẩm sạch online tuyệt vời này!
+            </p>
+            <div class="stars">
+                ★ ★ ★ ★ ★
+            </div>
+            <p class="author">
+                <strong>CA SỸ LAM TRƯỜNG</strong>
+            </p>
+        </section>
+        <section class="blog-section">
+            <div class="blog-container">
+                <div class="blog-post">
+                    <img src="images/a1.jpg" />
+                    <p class="date">17 Tháng 07, 2025</p>
+                    <h3>Tại sao bạn nên ăn bơ</h3>
+                    <p class="desc">
+                        Ai cũng biết tôi thích ăn. Món yêu thích nhất của tôi? Bơ. Tôi phát cuồng vì chúng!
+                    </p>
+                    <a href="#">/ XEM THÊM</a>
+                </div>
+
+                <div class="blog-post">
+                    <img src="images/a2.jpg" />
+                    <p class="date">17 Tháng 07, 2025</p>
+                    <h3>5 bước để sống khỏe tim mạch</h3>
+                    <p class="desc">
+                        Chế độ ăn hợp lý giúp giảm nguy cơ bệnh tim bằng cách giảm cholesterol, huyết áp,...
+                    </p>
+                    <a href="#">/ XEM THÊM</a>
+                </div>
+
+                <div class="blog-post">
+                    <img src="images/a3.jpg" />
+                    <p class="date">17 Tháng 07, 2025</p>
+                    <h3>Thức ăn hữu cơ cho trẻ</h3>
+                    <p class="desc">
+                        Chọn thịt và sữa hữu cơ giúp con bạn tránh tiếp xúc hóa chất gây hại.
+                    </p>
+                    <a href="#">/ XEM THÊM</a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section class="newsletter-section">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <h2>Subscribe To Our <br>Newsletter</h2>
+                </div>
+                <div class="footer-form">
+                    <input type="email" placeholder="Enter your e-mail">
+                    <button type="submit">SUBSCRIBE</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-bottom">
+            <div class="footer-columns-container">
+
+                <div class="footer-col contact-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-home"></i> 2/45 Tower Street, New York, USA</li>
+                        <li><i class="fas fa-phone"></i> 0012 678 8899</li>
+                        <li><i class="fas fa-envelope"></i> contact@organie.com</li>
+                        <li><i class="fas fa-globe"></i> <a href="http://www.organiestore.com"
+                                target="_blank">www.organiestore.com</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col info-col">
+                    <h3>Infomation</h3>
+                    <ul>
+                        <li><a href="#">New Products</a></li>
+                        <li><a href="#">Top Sellers</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">About Our Shop</a></li>
+                        <li><a href="#">Secure Shopping</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col account-col">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Personal Infomation</a></li>
+                        <li><a href="#">Addresses</a></li>
+                        <li><a href="#">Discount</a></li>
+                        <li><a href="#">Orders History</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col instagram-col">
+                    <h3>Photo in Instagram</h3>
+                    <div class="instagram-grid">
+                        <img src="/img/103488860_2308395562789507_2609505307234646225_n.jpg" alt="Instagram Image 1">
+                        <img src="/img/19960-avocado-salad-VAT-001-4x3-64241afdc3b04d00a9372e1573eac6f7.jpg"
+                            alt="Instagram Image 2">
+                        <img src="/img/3aeeee1d04b16f5ab613337aca0721e7.jpg" alt="Instagram Image 3">
+                        <img src="/img/acai-bowl-1.jpg" alt="Instagram Image 4">
+                        <img src="/img/banner-2021-04-16T110729.441.jpg" alt="Instagram Image 5">
+                        <img src="/img/images.jpg" alt="Instagram Image 6">
+                    </div>
+                </div>
+
+            </div>
+    </main>
 </body>
+
 </html>
