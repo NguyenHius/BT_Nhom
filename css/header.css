@@ -1,7 +1,7 @@
 .header {
     background-color: rgb(38, 38, 38);
     color: #fafafa;
-    padding: 10px 20px 1px 20px;
+    padding: 10px 20px 10px 20px;
 }
 .header,.navbar{
     width: 100%;
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(216, 234, 250, 0.726);
+    background-color: rgba(168, 212, 251, 0.726);
     padding: 40px 30px;
     height: 60px;
 }
@@ -134,8 +134,14 @@
     gap: 0px;
     justify-content: right;
 }
-/* Search-img */
-
+/* Search */
+#search-input {
+    width: 120px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
 #search-icon-img {
     width: 16px;
     height: 16px;
@@ -150,4 +156,177 @@
 .cart-container a{
     text-decoration: none;
     color: #000;
+}
+/* Menu toggle*/
+.menu-toggle,
+.menu-icon {
+  display: none;
+}
+@media (max-width: 992px) {
+
+  .menu-icon {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1001;
+    color: rgb(0, 0, 0);
+  }
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .navbar-menu,
+  .navbar-icons {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(216, 234, 250);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 998;
+  }
+#menu-toggle:checked ~ .content .navbar-menu {
+  display: flex;
+}
+#menu-toggle:checked ~ .navbar-icons {
+  display: flex;
+    }
+
+  .navbar-menu li {
+    margin-bottom: 15px;
+  }
+  #menu-toggle {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-icons {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-menu {
+    gap: 8px; /* giảm khoảng cách giữa các mục */
+  }
+
+  .navbar-menu li {
+    margin-bottom: 5px; /* giảm độ giãn cách dọc */
+  }
+
+  .navbar-menu li a {
+    padding: 10px 12px; /* giảm padding trong mỗi mục */
+    font-size: 14px; /* tùy chọn: giảm kích cỡ chữ */
+    text-align: left; /* canh trái chữ nếu cần */
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-icons {
+    display: flex;
+    flex-direction: row; /* nằm ngang thay vì dọc */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 0 20px; /* căn trái */
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #search-input {
+    width: 100px;
+  }
+
+  .cart-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-container a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #000;
+  }
+}
+/* Ẩn tất cả nút menu mặc định */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Nút ☰ (mở menu) */
+.menu-icon.open {
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Khi menu được mở thì ẩn nút mở */
+#menu-toggle:checked ~ .menu-icon.open {
+  display: none;
+}
+
+/* Nút ✕ (đóng menu), nằm trong menu */
+.menu-icon.close {
+  display: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+/* Khi menu mở thì hiển thị nút ✕ */
+#menu-toggle:checked ~ .content .navbar-menu .menu-icon.close {
+  display: block;
+}
+
+/* Thay màu nền menu mobile */
+@media (max-width: 992px) {
+  .navbar-menu,
+  .navbar-icons {
+    background-color: rgb(255, 255, 255); 
+  }
+}
+@media (min-width: 993px) {
+  .menu-icon {
+    display: none !important;
+  }
 }
