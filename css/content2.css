@@ -21,7 +21,7 @@ a:hover{
     text-align: center;
 }
 .farmservices div{
-    width: calc(25% );
+    width: calc(25%);
     float: left;
     text-align: center;
 }
@@ -29,7 +29,7 @@ a:hover{
     font-size: 42px;
 }
 .farmservices h4{
-    font-size: 18px;
+  font-size: 18px;
   font-style: italic;
   color: #8bb74a;
   margin-bottom: 20px;
@@ -76,7 +76,6 @@ a:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: ;
 }
 
 .d-b h2 {
@@ -118,4 +117,16 @@ a:hover{
 
 .add-to-cart a:hover {
   background-color: #6c9c3b;
+}
+.content2{
+  padding-bottom: 82px;
+}
+.farmservices_content2 {
+  background-color: #ebebeb;
+}
+.farmservices_content{
+  padding-bottom: 20px;
+}
+.farmservices_item{
+  padding-bottom: 15px;
 }
