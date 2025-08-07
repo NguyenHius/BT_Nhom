@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 0.3s ease;
-    outline: 10px solid red;
 }
 body {
     background-color: #fafafa;
@@ -31,11 +30,14 @@ p{
     float: left;
     width: 100%;
 }
-.container{
-    float: none;
+.container {
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    width: 1200px;
+    padding: 0 15px; /* thêm khoảng đệm khi màn hình nhỏ */
+    box-sizing: border-box;
 }
+
 /* End */
 /* Content */
 .a-left{

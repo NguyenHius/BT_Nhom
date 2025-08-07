@@ -1,0 +1,110 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ebebeb;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.testimonial .avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.testimonial .avatar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.testimonial h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+}
+
+.testimonial .quote {
+  font-style: italic;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.testimonial .stars {
+  color: #f7b500;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.testimonial .author {
+  color: #333;
+  font-size: 14px;
+}
+
+.blog-section {
+  padding: 60px 20px;
+  background-color: #fafafa;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-post {
+  width: calc((100% - 40px) / 3); 
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.blog-post .date {
+  color: #999;
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+.blog-post h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.blog-post .desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #6ab04c;
+  font-weight: bold;
+}
