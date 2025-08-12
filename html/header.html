@@ -14,12 +14,115 @@
 </head>
 
 <body>
-    <header class="header container">
-        <p id="header-content">
-            <span id="logo"><b>G2</b> Market</span>
-            <span><button id="header-button">Buy now</button></span>
-        </p>
+    <!-- Header -->
+    <header class="border-bottom">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light py-3 position-relative">
+            <div class="container-fluid">
+                <!-- Logo bên trái -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo/logo.png" alt="Logo" height="50">
+                </a>
+
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu ở giữa trang -->
+                <div class="collapse navbar-collapse justify-content-center position-absolute top-50 start-50 translate-middle"
+                    id="mainNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+
+                        <!-- SHOP dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button"
+                                data-bs-toggle="dropdown">SHOP</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Fruits</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Apple</a></li>
+                                        <li><a class="dropdown-item" href="#">Orange</a></li>
+                                        <li><a class="dropdown-item" href="#">Banana</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Vegetables</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Spinach</a></li>
+                                        <li><a class="dropdown-item" href="#">Carrot</a></li>
+                                        <li><a class="dropdown-item" href="#">Zucchini</a></li>
+                                        <li><a class="dropdown-item" href="#">Broccoli</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Organic Juices</a></li>
+                                <li><a class="dropdown-item" href="#">Today's Deals</a></li>
+                                <li><a class="dropdown-item" href="#">Drinks</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- PAGES dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                                data-bs-toggle="dropdown">PAGES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                                <li><a class="dropdown-item" href="#">Production Standards</a></li>
+                                <li><a class="dropdown-item" href="#">Careers</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- FEATURES dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button"
+                                data-bs-toggle="dropdown">FEATURES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Fast Delivery</a></li>
+                                <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
+                                <li><a class="dropdown-item" href="#">Seasonal Produce</a></li>
+                                <li><a class="dropdown-item" href="#">Storage Guide</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- BLOG dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                                data-bs-toggle="dropdown">BLOG</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Healthy Eating Tips</a></li>
+                                <li><a class="dropdown-item" href="#">Vegetable Recipes</a></li>
+                                <li><a class="dropdown-item" href="#">Customer Stories</a></li>
+                                <li><a class="dropdown-item" href="#">Promotions & Events</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Search + Cart bên phải -->
+                <div class="d-flex align-items-center ms-auto">
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">
+                            <img src="img/icons/search.png" alt="search" height="16">
+                        </button>
+                    </form>
+                    <a href="#" class="position-relative">
+                        <img src="img/icons/shopping-cart.png" alt="cart" height="28">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <nav class="navbar three-column container">
         <div class="navbar-logo a-left">
             <img src="../img/logo/logo.png" id="header-logo" alt="Logo" />
