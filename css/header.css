@@ -102,12 +102,13 @@
             transition: all 0.3s ease;
             color: #2c3e50;
             font-weight: 500;
+            border-radius: 15px;
         }
 
         .dropdown-item:hover {
             background: linear-gradient(135deg, #a9dd75, #8bc34a);
-            color: white;
-            transform: translateX(5px);
+            color: rgb(0, 0, 0);
+            transform: translateY(-2px);
         }
 
         /* Submenu improvements */

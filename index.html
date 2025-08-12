@@ -31,7 +31,7 @@
 
 <body>
 
-<!-- Header -->
+    <!-- Header -->
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light py-3 position-relative">
@@ -52,56 +52,58 @@
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
 
-                        <!-- SHOP dropdown -->
+                        <!-- PRODUCTS dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button"
-                                data-bs-toggle="dropdown">SHOP</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                                data-bs-toggle="dropdown">PRODUCTS</a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle" href="#">Fruits</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Apple</a></li>
-                                        <li><a class="dropdown-item" href="#">Orange</a></li>
-                                        <li><a class="dropdown-item" href="#">Banana</a></li>
+                                        <li><a class="dropdown-item" href="#">Apples</a></li>
+                                        <li><a class="dropdown-item" href="#">Oranges</a></li>
+                                        <li><a class="dropdown-item" href="#">Bananas</a></li>
+                                        <li><a class="dropdown-item" href="#">Berries</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle" href="#">Vegetables</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Spinach</a></li>
-                                        <li><a class="dropdown-item" href="#">Carrot</a></li>
-                                        <li><a class="dropdown-item" href="#">Zucchini</a></li>
-                                        <li><a class="dropdown-item" href="#">Broccoli</a></li>
+                                        <li><a class="dropdown-item" href="#">Leafy Greens</a></li>
+                                        <li><a class="dropdown-item" href="#">Root Vegetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Tomatoes & Cucumbers</a></li>
+                                        <li><a class="dropdown-item" href="#">Seasonal Picks</a></li>
                                     </ul>
                                 </li>
                                 <li><a class="dropdown-item" href="#">Organic Juices</a></li>
-                                <li><a class="dropdown-item" href="#">Today's Deals</a></li>
-                                <li><a class="dropdown-item" href="#">Drinks</a></li>
+                                <li><a class="dropdown-item" href="#">Fresh Dairy Products</a></li>
+                                <li><a class="dropdown-item" href="#">Snacks & Dried Fruits</a></li>
                             </ul>
                         </li>
 
-                        <!-- PAGES dropdown -->
+                        <!-- SPECIAL OFFERS dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
-                                data-bs-toggle="dropdown">PAGES</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="offersDropdown" role="button"
+                                data-bs-toggle="dropdown">SPECIAL OFFERS</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Weekly Discounts</a></li>
+                                <li><a class="dropdown-item" href="#">Buy 1 Get 1 Free</a></li>
+                                <li><a class="dropdown-item" href="#">Seasonal Bundles</a></li>
+                                <li><a class="dropdown-item" href="#">Clearance Sale</a></li>
+                                <li><a class="dropdown-item" href="#">Gift Vouchers</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ABOUT US dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown">ABOUT US</a>
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Our Story</a></li>
-                                <li><a class="dropdown-item" href="#">Production Standards</a></li>
+                                <li><a class="dropdown-item" href="#">Farming Practices</a></li>
+                                <li><a class="dropdown-item" href="#">Meet the Farmers</a></li>
+                                <li><a class="dropdown-item" href="#">Quality & Safety Standards</a></li>
                                 <li><a class="dropdown-item" href="#">Careers</a></li>
-                                <li><a class="dropdown-item" href="#">Contact</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- FEATURES dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button"
-                                data-bs-toggle="dropdown">FEATURES</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Fast Delivery</a></li>
-                                <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
-                                <li><a class="dropdown-item" href="#">Seasonal Produce</a></li>
-                                <li><a class="dropdown-item" href="#">Storage Guide</a></li>
                             </ul>
                         </li>
 
@@ -111,11 +113,12 @@
                                 data-bs-toggle="dropdown">BLOG</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Healthy Eating Tips</a></li>
-                                <li><a class="dropdown-item" href="#">Vegetable Recipes</a></li>
+                                <li><a class="dropdown-item" href="#">Easy Recipes</a></li>
+                                <li><a class="dropdown-item" href="#">Seasonal Food Guides</a></li>
                                 <li><a class="dropdown-item" href="#">Customer Stories</a></li>
-                                <li><a class="dropdown-item" href="#">Promotions & Events</a></li>
                             </ul>
                         </li>
+
 
                         <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
                     </ul>
@@ -131,7 +134,8 @@
                     </div>
                     <a href="#" class="cart-link position-relative">
                         <i class="fas fa-shopping-cart" style="font-size: 1.5rem; color: #2c3e50;"></i>
-                        <span class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        <span
+                            class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             3
                         </span>
                     </a>
@@ -151,7 +155,7 @@
                 <h5>ORGANE FARM</h5>
                 <h1>Taste from the farm</h1>
                 <p>Organic products grown with love</p>
-                <a href="#" class="button">SHOP NOW</a>
+                <a href="#" class="hero-content-button">SHOP NOW</a>
             </div>
         </div>
 
@@ -252,7 +256,7 @@
         </section>
 
         <!-- Content 2 -->
-         <div class="transition-section1"></div>
+        <div class="transition-section1"></div>
         <div class="content2">
             <div class="farmservices_content2">
                 <div class="container">
@@ -319,7 +323,7 @@
             </div>
         </div>
         <!-- Content 3 -->
-         <div class="transition-section1"></div>
+        <div class="transition-section1"></div>
         <section class="testimonial">
             <div class="avatar">
                 <img src="images/lamtruong.jpg" />
@@ -383,67 +387,65 @@
             </div>
         </section>
 
-        <footer class="footer-bottom">
-            <div class="footer-columns-container">
-
-                <div class="footer-col contact-col">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><i class="fas fa-home"></i> 2/45 Tower Street, New York, USA</li>
-                        <li><i class="fas fa-phone"></i> 0012 678 8899</li>
-                        <li><i class="fas fa-envelope"></i> contact@organie.com</li>
-                        <li><i class="fas fa-globe"></i> <a href="http://www.organiestore.com"
-                                target="_blank">www.organiestore.com</a></li>
-                    </ul>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <div class="my-footer">
+            <footer class="footer-bottom">
+                <div class="footer-columns-container">
+                    <div class="footer-col contact-col">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-home"></i> 2/45 Tower Street, New York, USA</li>
+                            <li><i class="fas fa-phone"></i> 0012 678 8899</li>
+                            <li><i class="fas fa-envelope"></i> contact@organie.com</li>
+                            <li><i class="fas fa-globe"></i> <a href="http://www.organiestore.com"
+                                    target="_blank">www.organiestore.com</a></li>
+                        </ul>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col info-col">
+                        <h3>Infomation</h3>
+                        <ul>
+                            <li><a href="#">New Products</a></li>
+                            <li><a href="#">Top Sellers</a></li>
+                            <li><a href="#">Our Blog</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col account-col">
+                        <h3>My Account</h3>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Personal Infomation</a></li>
+                            <li><a href="#">Addresses</a></li>
+                            <li><a href="#">Discount</a></li>
+                            <li><a href="#">Orders History</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col instagram-col">
+                        <h3>Photo in Instagram</h3>
+                        <div class="instagram-grid">
+                            <img src="img/103488860_2308395562789507_2609505307234646225_n.jpg" alt="Instagram Image 1">
+                            <img src="img/19960-avocado-salad-VAT-001-4x3-64241afdc3b04d00a9372e1573eac6f7.jpg"
+                                alt="Instagram Image 2">
+                            <img src="img/3aeeee1d04b16f5ab613337aca0721e7.jpg" alt="Instagram Image 3">
+                            <img src="img/acai-bowl-1.jpg" alt="Instagram Image 4">
+                            <img src="img/banner-2021-04-16T110729.441.jpg" alt="Instagram Image 5">
+                            <img src="img/images.jpg" alt="Instagram Image 6">
+                        </div>
                     </div>
                 </div>
-
-                <div class="footer-col info-col">
-                    <h3>Infomation</h3>
-                    <ul>
-                        <li><a href="#">New Products</a></li>
-                        <li><a href="#">Top Sellers</a></li>
-                        <li><a href="#">Our Blog</a></li>
-                        <li><a href="#">About Our Shop</a></li>
-                        <li><a href="#">Secure Shopping</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col account-col">
-                    <h3>My Account</h3>
-                    <ul>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Personal Infomation</a></li>
-                        <li><a href="#">Addresses</a></li>
-                        <li><a href="#">Discount</a></li>
-                        <li><a href="#">Orders History</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col instagram-col">
-                    <h3>Photo in Instagram</h3>
-                    <div class="instagram-grid">
-                        <img src="img/103488860_2308395562789507_2609505307234646225_n.jpg" alt="Instagram Image 1">
-                        <img src="img/19960-avocado-salad-VAT-001-4x3-64241afdc3b04d00a9372e1573eac6f7.jpg"
-                            alt="Instagram Image 2">
-                        <img src="img/3aeeee1d04b16f5ab613337aca0721e7.jpg" alt="Instagram Image 3">
-                        <img src="img/acai-bowl-1.jpg" alt="Instagram Image 4">
-                        <img src="img/banner-2021-04-16T110729.441.jpg" alt="Instagram Image 5">
-                        <img src="img/images.jpg" alt="Instagram Image 6">
-                    </div>
-                </div>
-
-            </div>
+            </footer>
+        </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
         // Add scroll effect
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
@@ -453,13 +455,13 @@
         });
 
         // Submenu hover effects
-        document.querySelectorAll('.dropdown-submenu').forEach(function(element) {
-            element.addEventListener('mouseenter', function() {
+        document.querySelectorAll('.dropdown-submenu').forEach(function (element) {
+            element.addEventListener('mouseenter', function () {
                 const submenu = this.querySelector('.dropdown-menu');
                 if (submenu) submenu.style.display = 'block';
             });
-            
-            element.addEventListener('mouseleave', function() {
+
+            element.addEventListener('mouseleave', function () {
                 const submenu = this.querySelector('.dropdown-menu');
                 if (submenu) submenu.style.display = 'none';
             });

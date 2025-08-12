@@ -53,7 +53,7 @@ body, html {
   margin-bottom: 20px;
 }
 
-.button {
+.hero-content-button {
   text-decoration: none;
   background-color: #ffffff;
   color: #4CAF50;
@@ -63,9 +63,10 @@ body, html {
   transition: background-color 0.3s;
 }
 
-.button:hover {
+/* .hero-content-button a:hover {
   background-color: #e6ffe6;
-}
+  transform: scale(1.1) translateX(-10%);
+} */
 
 .our-story {
   display: flex;
