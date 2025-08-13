@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Fetch products data from JSON file
 async function fetchProductsData() {
     try {
-        const response = await fetch('../json/products.json');
+        const response = await fetch('json/products.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
