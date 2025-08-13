@@ -1,4 +1,3 @@
-<script>
 (function () {
   const BREAKPOINT = 992; // khớp với @media ở trên
 
@@ -32,4 +31,4 @@
   applyNavMode();
   window.addEventListener('resize', applyNavMode);
 })();
-</script>
+
