@@ -1,13 +1,13 @@
-// Global variables
+
 let currentCategory = 'all';
 let currentSearchTerm = '';
-// Note: localStorage is not supported in Claude.ai artifacts, using in-memory storage instead
+
 let cart = [];
 
-// Products data will be loaded from JSON file
+
 let productsData = null;
 
-// Initialize the page
+
 document.addEventListener('DOMContentLoaded', function() {
     fetchProductsData()
         .then(() => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
-// Fetch products data from JSON file.
+
 async function fetchProductsData() {
     try {
         const response = await fetch('json/products.json');
@@ -36,22 +36,18 @@ async function fetchProductsData() {
     }
 }
 
-// Setup event listeners
+
 function setupEventListeners() {
-    // Filter buttons
     document.querySelectorAll('.filters button').forEach(button => {
         button.addEventListener('click', function() {
-            // Update active button
             document.querySelectorAll('.filters button').forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
-           
-            // Filter products
             currentCategory = this.dataset.category;
             filterProducts();
         });
     });
 
-    // Search input - Fixed: Look for the correct search input in header
+    // Search input 
     const searchInput = document.querySelector('.search-container input[type="search"]');
     if (searchInput) {
         searchInput.addEventListener('input', function() {
@@ -60,7 +56,7 @@ function setupEventListeners() {
         });
     }
 
-    // Header scroll effect - This was duplicated, keeping it here for organization
+    // Header scroll effect - Duplicate in html
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
         if (window.scrollY > 50) {
@@ -85,7 +81,7 @@ function loadProducts() {
     }, 1000);
 }
 
-// Display products in the grid
+// Display products in gridf
 function displayProducts(products) {
     const productGrid = document.getElementById('productGrid');
     const noProducts = document.getElementById('noProducts');
@@ -122,7 +118,7 @@ function displayProducts(products) {
     `).join('');
 }
 
-// Filter products based on category and search term
+// Filter 
 function filterProducts() {
     if (!productsData || !productsData.products) {
         showError('No product data available');
@@ -138,7 +134,7 @@ function filterProducts() {
         );
     }
     
-    // Filter by search term
+    // Filter by search
     if (currentSearchTerm) {
         filteredProducts = filteredProducts.filter(product =>
             product.name.toLowerCase().includes(currentSearchTerm) ||
@@ -149,7 +145,7 @@ function filterProducts() {
     displayProducts(filteredProducts);
 }
 
-// Add product to cart
+// Add to cart
 function addToCart(productId) {
     if (!productsData || !productsData.products) {
         showError('Product data not available');
@@ -194,11 +190,12 @@ function showError(message) {
     noProducts.style.display = 'block';
 }
 
-// Toggle wishlist (placeholder function)
+// Toggle wishlist 
 function toggleWishlist(productId) {
-    // Add wishlist functionality here
+    // CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG CHUA XONG 
+    // CAN LAM HANH DONG THEM WISHLIST
     console.log('Toggle wishlist for product:', productId);
-    // You can implement wishlist storage similar to cart
+
 }
 
 // Update cart count in header
@@ -214,7 +211,7 @@ function updateCartCount() {
 
 // Show feedback when item added to cart
 function showAddToCartFeedback() {
-    // Create a temporary notification
+    // Temporary notification
     const notification = document.createElement('div');
     notification.className = 'cart-notification';
     notification.innerHTML = '<i class="fas fa-check"></i> Item added to cart!';
@@ -233,7 +230,7 @@ function showAddToCartFeedback() {
     
     document.body.appendChild(notification);
     
-    // Remove notification after 3 seconds
+    // Remove notification after 3 secs
     setTimeout(() => {
         notification.style.animation = 'slideOut 0.3s ease-in';
         setTimeout(() => {
