@@ -252,5 +252,21 @@
     background: linear-gradient(#fafafa, #ebebeb);
     height: 20px;
 }
+/* Hover để mở dropdown CHỈ trên màn hình >= 992px (desktop) */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  /* Nếu có submenu lồng nhau */
+  .navbar .dropdown-submenu {
+    position: relative;
+  }
+  .navbar .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+  }
+}
 
 

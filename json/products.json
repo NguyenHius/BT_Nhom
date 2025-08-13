@@ -1,0 +1,97 @@
+{"products": [
+                {
+                    "id": 1,
+                    "name": "Organic Red Apples",
+                    "price": "25.000Đ",
+                    "originalPrice": "30.000Đ",
+                    "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "fruits",
+                    "description": "Fresh organic red apples from local farms. Sweet, crispy and packed with vitamins.",
+                    "inStock": true,
+                    "featured": true,
+                    "discount": 17
+                },
+                {
+                    "id": 2,
+                    "name": "Fresh Spinach",
+                    "price": "18.000Đ",
+                    "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "vegetables",
+                    "description": "Organic leafy spinach, perfect for salads and cooking. Rich in iron and nutrients.",
+                    "inStock": true,
+                    "featured": false
+                },
+                {
+                    "id": 3,
+                    "name": "Orange Juice",
+                    "price": "35.000Đ",
+                    "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "juice",
+                    "description": "100% pure organic orange juice. Freshly squeezed with no added preservatives.",
+                    "inStock": true,
+                    "featured": true
+                },
+                {
+                    "id": 4,
+                    "name": "Organic Honey",
+                    "price": "85.000Đ",
+                    "image": "https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "processed-food",
+                    "description": "Pure organic honey from mountain bee farms. Natural sweetener with health benefits.",
+                    "inStock": true,
+                    "featured": false
+                },
+                {
+                    "id": 5,
+                    "name": "Vitamin C Face Cream",
+                    "price": "120.000Đ",
+                    "originalPrice": "150.000Đ",
+                    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "skin-care",
+                    "description": "Natural vitamin C face cream made from organic citrus extracts. Anti-aging formula.",
+                    "inStock": true,
+                    "featured": true,
+                    "discount": 20
+                },
+                {
+                    "id": 6,
+                    "name": "Organic Bananas",
+                    "price": "22.000Đ",
+                    "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "fruits",
+                    "description": "Sweet organic bananas rich in potassium and natural energy. Perfect for smoothies.",
+                    "inStock": true,
+                    "featured": false
+                },
+                {
+                    "id": 7,
+                    "name": "Fresh Carrots",
+                    "price": "15.000Đ",
+                    "image": "https://images.unsplash.com/photo-1445282768818-728615cc910a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "vegetables",
+                    "description": "Organic carrots full of beta-carotene. Great for cooking, juicing, or snacking.",
+                    "inStock": true,
+                    "featured": false
+                },
+                {
+                    "id": 8,
+                    "name": "Green Smoothie",
+                    "price": "42.000Đ",
+                    "image": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "juice",
+                    "description": "Healthy green smoothie blend with spinach, apple, and cucumber. Energizing drink.",
+                    "inStock": false,
+                    "featured": false
+                },
+                {
+                    "id": 9,
+                    "name": "Organic Granola",
+                    "price": "65.000Đ",
+                    "image": "https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                    "category": "processed-food",
+                    "description": "Homemade organic granola with nuts, dried fruits, and honey. Perfect breakfast choice.",
+                    "inStock": true,
+                    "featured": true
+                }
+            ]
+        }
