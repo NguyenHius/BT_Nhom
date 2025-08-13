@@ -52,35 +52,48 @@
 
                         <!-- PRODUCTS dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="productsDropdown">PRODUCTS</a>
+                            <a class="nav-link dropdown-toggle" href="product.html" id="productsDropdown">PRODUCTS</a>
                             <ul class="dropdown-menu">
+
+                                <!-- Fruits & Vegetables -->
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Fruits</a>
+                                    <a class="dropdown-item dropdown-toggle" href="#">Fruits & Vegetables</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Apples</a></li>
-                                        <li><a class="dropdown-item" href="#">Oranges</a></li>
-                                        <li><a class="dropdown-item" href="#">Bananas</a></li>
-                                        <li><a class="dropdown-item" href="#">Berries</a></li>
+                                        <li><a class="dropdown-item" href="#">Fruits</a></li>
+                                        <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Organic Produce</a></li>
                                     </ul>
                                 </li>
+
+                                <!-- Juices & Dairy -->
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Vegetables</a>
+                                    <a class="dropdown-item dropdown-toggle" href="#">Juices & Dairy</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Leafy Greens</a></li>
-                                        <li><a class="dropdown-item" href="#">Root Vegetables</a></li>
-                                        <li><a class="dropdown-item" href="#">Tomatoes & Cucumbers</a></li>
-                                        <li><a class="dropdown-item" href="#">Seasonal Picks</a></li>
+                                        <li><a class="dropdown-item" href="#">Organic Juices</a></li>
+                                        <li><a class="dropdown-item" href="#">Fresh Dairy Products</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Organic Juices</a></li>
-                                <li><a class="dropdown-item" href="#">Fresh Dairy Products</a></li>
-                                <li><a class="dropdown-item" href="#">Snacks & Dried Fruits</a></li>
+
+                                <!-- Processed Food -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Processed Food</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Snacks</a></li>
+                                        <li><a class="dropdown-item" href="#">Dried Fruits</a></li>
+                                        <li><a class="dropdown-item" href="#">Packaged Goods</a></li>
+                                    </ul>
+                                </li>
+
+                                <!-- Skin Care -->
+                                <li><a class="dropdown-item" href="#">Skin Care</a></li>
                             </ul>
                         </li>
 
+
                         <!-- SPECIAL OFFERS dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offersDropdown">SPECIAL OFFERS</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="offersDropdown" role="button"
+                                data-bs-toggle="dropdown">SPECIAL OFFERS</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Weekly Discounts</a></li>
                                 <li><a class="dropdown-item" href="#">Buy 1 Get 1 Free</a></li>
@@ -92,7 +105,8 @@
 
                         <!-- ABOUT US dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown">ABOUT US</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown">ABOUT US</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Our Story</a></li>
                                 <li><a class="dropdown-item" href="#">Farming Practices</a></li>
@@ -104,7 +118,8 @@
 
                         <!-- BLOG dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown">BLOG</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                                data-bs-toggle="dropdown">BLOG</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Healthy Eating Tips</a></li>
                                 <li><a class="dropdown-item" href="#">Easy Recipes</a></li>
@@ -152,11 +167,14 @@
                 <!-- Filters -->
                 <div class="filters">
                     <button class="active" data-category="all">ALL</button>
-                    <button data-category="fruits">FRUITS & VEGIES</button>
+                    <button data-category="fruits">FRUITS</button>
+                    <button data-category="vegetables">VEGETABLES</button>
                     <button data-category="juice">JUICE</button>
                     <button data-category="processed-food">PROCESSED FOOD</button>
                     <button data-category="skin-care">SKIN CARE</button>
+                    <button data-category="dairy">DAIRY</button>
                 </div>
+
 
                 <!-- Loading state -->
                 <div id="loading" class="loading">

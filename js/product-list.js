@@ -103,15 +103,15 @@ function displayProducts(products) {
         <div class="product-card">
             ${product.discount ? `<div class="discount-badge">-${product.discount}%</div>` : ''}
             <div class="heart" onclick="toggleWishlist(${product.id})">♥</div>
-            <img src="${product.image}" alt="${product.name}" onerror="this.src='img/placeholder.jpg'" />
+            <img src="${product.image}" alt="${product.name}"  />
             <div class="product-info">
                 <h4>${product.name}</h4>
                 <p class="product-description">${product.description}</p>
                 <div class="product-price">
                     ${product.originalPrice ? 
-                        `<span class="original-price">$${product.originalPrice}</span>
-                         <span class="current-price">$${product.price}</span>` : 
-                        `<span class="current-price">$${product.price}</span>`
+                        `<span class="original-price">${product.originalPrice}</span>
+                         <span class="current-price">${product.price}</span>` : 
+                        `<span class="current-price">${product.price}</span>`
                     }
                 </div>
                 <button class="add-to-cart-btn" onclick="addToCart(${product.id})">
