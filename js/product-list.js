@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
-// Fetch products data from JSON file
+// Fetch products data from JSON file.
 async function fetchProductsData() {
     try {
         const response = await fetch('json/products.json');
