@@ -1,220 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Header -->
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 position-relative">
+        <div class="container-fluid">
+            <!-- Logo bên trái -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo/logo.png" alt="Logo" height="50">
+            </a>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <title>Demo layout</title>
-</head>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<body>
-    <!-- Header -->
-    <header class="border-bottom">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light py-3 position-relative">
-            <div class="container-fluid">
-                <!-- Logo bên trái -->
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo/logo.png" alt="Logo" height="50">
-                </a>
+            <!-- Menu ở giữa trang -->
+            <div class="collapse navbar-collapse justify-content-center position-absolute top-50 start-50 translate-middle"
+                id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
 
-                <!-- Toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Menu ở giữa trang -->
-                <div class="collapse navbar-collapse justify-content-center position-absolute top-50 start-50 translate-middle"
-                    id="mainNavbar">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-
-                        <!-- SHOP dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button"
-                                data-bs-toggle="dropdown">SHOP</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Fruits</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Apple</a></li>
-                                        <li><a class="dropdown-item" href="#">Orange</a></li>
-                                        <li><a class="dropdown-item" href="#">Banana</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Vegetables</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Spinach</a></li>
-                                        <li><a class="dropdown-item" href="#">Carrot</a></li>
-                                        <li><a class="dropdown-item" href="#">Zucchini</a></li>
-                                        <li><a class="dropdown-item" href="#">Broccoli</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Organic Juices</a></li>
-                                <li><a class="dropdown-item" href="#">Today's Deals</a></li>
-                                <li><a class="dropdown-item" href="#">Drinks</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- PAGES dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
-                                data-bs-toggle="dropdown">PAGES</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">About Us</a></li>
-                                <li><a class="dropdown-item" href="#">Our Story</a></li>
-                                <li><a class="dropdown-item" href="#">Production Standards</a></li>
-                                <li><a class="dropdown-item" href="#">Careers</a></li>
-                                <li><a class="dropdown-item" href="#">Contact</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- FEATURES dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button"
-                                data-bs-toggle="dropdown">FEATURES</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Fast Delivery</a></li>
-                                <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
-                                <li><a class="dropdown-item" href="#">Seasonal Produce</a></li>
-                                <li><a class="dropdown-item" href="#">Storage Guide</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- BLOG dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
-                                data-bs-toggle="dropdown">BLOG</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Healthy Eating Tips</a></li>
-                                <li><a class="dropdown-item" href="#">Vegetable Recipes</a></li>
-                                <li><a class="dropdown-item" href="#">Customer Stories</a></li>
-                                <li><a class="dropdown-item" href="#">Promotions & Events</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-
-                <!-- Search + Cart bên phải -->
-                <div class="d-flex align-items-center ms-auto">
-                    <form class="d-flex me-3">
-                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-                        <button class="btn btn-outline-secondary" type="submit">
-                            <img src="img/icons/search.png" alt="search" height="16">
-                        </button>
-                    </form>
-                    <a href="#" class="position-relative">
-                        <img src="img/icons/shopping-cart.png" alt="cart" height="28">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            0
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <nav class="navbar three-column container">
-        <div class="navbar-logo a-left">
-            <img src="../img/logo/logo.png" id="header-logo" alt="Logo" />
-        </div>
-        <div class="content">
-            <ul class="navbar-menu">
-                <li><a href="#">HOME</a></li>
-                <ul class="navbar-menu">
-                    <!-- Dropdown 1 -->
-                    <li class="dropdown">
-                        <a href="#">SHOP <span class="arrow">&#5121;</span></a>
+                    <!-- PRODUCTS dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="product.html" id="productsDropdown">PRODUCTS</a>
                         <ul class="dropdown-menu">
+
+                            <!-- Fruits & Vegetables -->
                             <li class="dropdown-submenu">
-                                <a href="#">Fruits</a>
-                                <!-- Dropdown 2 -->
+                                <a class="dropdown-item dropdown-toggle" href="#">Fruits & Vegetables</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Apple</a></li>
-                                    <li><a href="#">Orange</a></li>
-                                    <li><a href="#">Banana</a></li>
+                                    <li><a class="dropdown-item" href="#">Fruits</a></li>
+                                    <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                    <li><a class="dropdown-item" href="#">Organic Produce</a></li>
                                 </ul>
                             </li>
+
+                            <!-- Juices & Dairy -->
                             <li class="dropdown-submenu">
-                                <a href="#">Vegetables</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Juices & Dairy</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Spinach</a></li>
-                                    <li><a href="#">Carrot</a></li>
-                                    <li><a href="#">Zucchini</a></li>
-                                    <li><a href="#">Broccoli</a></li>
+                                    <li><a class="dropdown-item" href="#">Organic Juices</a></li>
+                                    <li><a class="dropdown-item" href="#">Fresh Dairy Products</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Organic Juices</a></li>
-                            <li><a href="#">Today's Deals</a></li>
-                            <li><a href="#">Drinks</a></li>
+
+                            <!-- Processed Food -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Processed Food</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Snacks</a></li>
+                                    <li><a class="dropdown-item" href="#">Dried Fruits</a></li>
+                                    <li><a class="dropdown-item" href="#">Packaged Goods</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Skin Care -->
+                            <li><a class="dropdown-item" href="#">Skin Care</a></li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="navbar-menu">
-                    <li class="dropdown">
-                        <a href="#">PAGES <span class="arrow">&#5121;</span></a>
+
+
+                    <!-- SPECIAL OFFERS dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="offersDropdown" role="button"
+                            data-bs-toggle="dropdown">SPECIAL OFFERS</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our Story</a></li>
-                            <li><a href="#">Production Standards</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="#">About Us</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Our Team</a></li>
-                                    <li><a href="#">Our Story</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                </ul>
-                            </li>
+                            <li><a class="dropdown-item" href="#">Weekly Discounts</a></li>
+                            <li><a class="dropdown-item" href="#">Buy 1 Get 1 Free</a></li>
+                            <li><a class="dropdown-item" href="#">Seasonal Bundles</a></li>
+                            <li><a class="dropdown-item" href="#">Clearance Sale</a></li>
+                            <li><a class="dropdown-item" href="#">Gift Vouchers</a></li>
                         </ul>
                     </li>
+
+                    <!-- ABOUT US dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown">ABOUT US</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Our Story</a></li>
+                            <li><a class="dropdown-item" href="#">Farming Practices</a></li>
+                            <li><a class="dropdown-item" href="#">Meet the Farmers</a></li>
+                            <li><a class="dropdown-item" href="#">Quality & Safety Standards</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- BLOG dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                            data-bs-toggle="dropdown">BLOG</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Healthy Eating Tips</a></li>
+                            <li><a class="dropdown-item" href="#">Easy Recipes</a></li>
+                            <li><a class="dropdown-item" href="#">Seasonal Food Guides</a></li>
+                            <li><a class="dropdown-item" href="#">Customer Stories</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
                 </ul>
-                <li class="dropdown">
-                    <a href="#">FEATURES <span class="arrow">&#5121;</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Fast Delivery</a></li>
-                        <li><a href="#">Quality Assurance</a></li>
-                        <li><a href="#">Seasonal Produce</a></li>
-                        <li><a href="#">Storage Guide</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">BLOG <span class="arrow">&#5121;</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Healthy Eating Tips</a></li>
-                        <li><a href="#">Vegetable Recipes</a></li>
-                        <li><a href="#">Customer Stories</a></li>
-                        <li><a href="#">Promotions & Events</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-        <div class="a-right navbar-icons">
-            <div class="search-container">
-                <input type="text" placeholder="Search..." id="search-input" />
-                <label for="search-input" class="search-icon">
-                    <img src="../img/icons/search.png" alt="search icon" id="search-icon-img" />
-                </label>
             </div>
-            <div class="cart-container">
-                <a href="#">
-                    <img src="../img/icons/shopping-cart.png" alt="cart icon" id="cart-icon-img" />
-                    <span class="cart-count">0</span>
+
+            <!-- Search + Cart bên phải -->
+            <div class="d-flex align-items-center ms-auto">
+                <div class="search-container d-flex me-3">
+                    <input class="form-control" type="search" placeholder="Search products..." aria-label="Search">
+                    <button class="btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <a href="#" class="cart-link position-relative">
+                    <i class="fas fa-shopping-cart" style="font-size: 1.5rem; color: #2c3e50;"></i>
+                    <span
+                        class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        3
+                    </span>
                 </a>
             </div>
         </div>
     </nav>
-</body>
-
-</html>
+</header>
