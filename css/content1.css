@@ -137,23 +137,28 @@ body, html {
 }
 
 .filters {
-  margin: 30px 0;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .filters button {
-  background: transparent;
-  border: 1px solid #ddd;
-  padding: 8px 16px;
-  margin: 5px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: 500;
+    background: transparent;
+    border: 2px solid #8bc34a;
+    color: #8bc34a;
+    padding: 0.8rem 2rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.filters .active {
-  background: #6c9c57;
-  color: #fff;
-  border-color: #6c9c57;
+.filters button:ho
+.filters button.active {
+    background: #8bc34a;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(139, 195, 74, 0.3);
 }
 
 .product-grid {
