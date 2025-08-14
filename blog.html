@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Organie</title>
+    <!-- Link chung cho cac page Link chung cho cac page Link chung cho cac page Link chung cho cac page Link chung cho cac page -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/FileFooter.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link rieng cho tung page Link rieng cho tung page Link rieng cho tung page Link rieng cho tung page Link rieng cho tung page -->
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main class="blog-main">
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="container">
+                <h1>Our Blog</h1>
+                <p>Discover healthy recipes, farming tips, and organic living insights from our experts</p>
+            </div>
+        </section>
+
+        <!-- Blog Content -->
+        <section class="blog-section">
+            <div class="container">
+                <!-- Filters -->
+                <div class="blog-filters">
+                    <button class="filter-btn active" data-category="all">All Posts</button>
+                    <button class="filter-btn" data-category="recipes">Easy Recipes</button>
+                    <button class="filter-btn" data-category="tips">Healthy Tips</button>
+                    <button class="filter-btn" data-category="guides">Seasonal Guides</button>
+                    <button class="filter-btn" data-category="stories">Customer Stories</button>
+                </div>
+
+                <div class="row">
+                    <!-- Main Content -->
+                    <div class="col-lg-8">
+                        <!-- Loading State -->
+                        <div id="loading" class="loading">
+                            <div class="spinner"></div>
+                            <p>Loading blog posts...</p>
+                        </div>
+
+                        <!-- Blog Grid -->
+                        <div id="blogGrid" class="blog-grid">
+                            <!-- Sample Blog Posts - Replace with your content -->
+                            <article class="blog-card" data-category="recipes">
+                                <div class="blog-card-image">
+                                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&h=250&fit=crop"
+                                        alt="Blog post image">
+                                    <div class="blog-category">Easy Recipes</div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                                        <span><i class="fas fa-user"></i> By Admin</span>
+                                        <span><i class="fas fa-comments"></i> 12 Comments</span>
+                                    </div>
+                                    <h3 class="blog-title">
+                                        <a href="#">5 Quick Organic Salad Recipes for Busy Weekdays</a>
+                                    </h3>
+                                    <p class="blog-excerpt">Discover delicious and nutritious salad recipes that you can
+                                        prepare in under 15 minutes using fresh organic ingredients from your local
+                                        market.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card" data-category="tips">
+                                <div class="blog-card-image">
+                                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=250&fit=crop"
+                                        alt="Blog post image">
+                                    <div class="blog-category">Healthy Tips</div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fas fa-calendar"></i> March 12, 2024</span>
+                                        <span><i class="fas fa-user"></i> By Admin</span>
+                                        <span><i class="fas fa-comments"></i> 8 Comments</span>
+                                    </div>
+                                    <h3 class="blog-title">
+                                        <a href="#">How to Store Organic Vegetables to Keep Them Fresh</a>
+                                    </h3>
+                                    <p class="blog-excerpt">Learn the best storage methods to extend the life of your
+                                        organic vegetables and reduce waste while maintaining their nutritional value.
+                                    </p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card" data-category="guides">
+                                <div class="blog-card-image">
+                                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=250&fit=crop"
+                                        alt="Blog post image">
+                                    <div class="blog-category">Seasonal Guides</div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                                        <span><i class="fas fa-user"></i> By Admin</span>
+                                        <span><i class="fas fa-comments"></i> 15 Comments</span>
+                                    </div>
+                                    <h3 class="blog-title">
+                                        <a href="#">Spring Produce Guide: What's in Season Now</a>
+                                    </h3>
+                                    <p class="blog-excerpt">Explore the best spring vegetables and fruits that are
+                                        currently in season and discover new ways to incorporate them into your meals.
+                                    </p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card" data-category="stories">
+                                <div class="blog-card-image">
+                                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop"
+                                        alt="Blog post image">
+                                    <div class="blog-category">Customer Stories</div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fas fa-calendar"></i> March 8, 2024</span>
+                                        <span><i class="fas fa-user"></i> By Customer</span>
+                                        <span><i class="fas fa-comments"></i> 6 Comments</span>
+                                    </div>
+                                    <h3 class="blog-title">
+                                        <a href="#">My Journey to Organic Living: A Customer's Story</a>
+                                    </h3>
+                                    <p class="blog-excerpt">Read about Sarah's transformation to organic living and how
+                                        it changed her family's health and lifestyle for the better.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card" data-category="recipes">
+                                <div class="blog-card-image">
+                                    <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=250&fit=crop"
+                                        alt="Blog post image">
+                                    <div class="blog-category">Easy Recipes</div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                                        <span><i class="fas fa-user"></i> By Admin</span>
+                                        <span><i class="fas fa-comments"></i> 20 Comments</span>
+                                    </div>
+                                    <h3 class="blog-title">
+                                        <a href="#">Organic Smoothie Bowls: 3 Delicious Variations</a>
+                                    </h3>
+                                    <p class="blog-excerpt">Start your morning right with these colorful and nutritious
+                                        smoothie bowl recipes made with organic fruits and superfoods.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card" data-category="tips">
+                                <div class="blog-card-image">
+                                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop"
+                                        alt="Blog post image">
+                                    <div class="blog-category">Healthy Tips</div>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fas fa-calendar"></i> March 3, 2024</span>
+                                        <span><i class="fas fa-user"></i> By Admin</span>
+                                        <span><i class="fas fa-comments"></i> 9 Comments</span>
+                                    </div>
+                                    <h3 class="blog-title">
+                                        <a href="#">Understanding Organic Labels: What They Really Mean</a>
+                                    </h3>
+                                    <p class="blog-excerpt">Decode the various organic certifications and labels to make
+                                        informed decisions about the food you buy for your family.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="blog-pagination">
+                            <a href="#" class="page-btn"><i class="fas fa-chevron-left"></i></a>
+                            <a href="#" class="page-btn active">1</a>
+                            <a href="#" class="page-btn">2</a>
+                            <a href="#" class="page-btn">3</a>
+                            <a href="#" class="page-btn"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <aside class="blog-sidebar">
+                            <!-- Search -->
+                            <div class="sidebar-section">
+                                <h3 class="sidebar-title">Search</h3>
+                                <div class="search-box">
+                                    <input type="text" placeholder="Search blog posts..." id="blogSearch">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Categories -->
+                            <div class="sidebar-section">
+                                <h3 class="sidebar-title">Categories</h3>
+                                <ul class="category-list">
+                                    <li class="active" data-category="all">
+                                        All Posts
+                                        <span class="category-count">24</span>
+                                    </li>
+                                    <li data-category="recipes">
+                                        Easy Recipes
+                                        <span class="category-count">8</span>
+                                    </li>
+                                    <li data-category="tips">
+                                        Healthy Tips
+                                        <span class="category-count">6</span>
+                                    </li>
+                                    <li data-category="guides">
+                                        Seasonal Guides
+                                        <span class="category-count">5</span>
+                                    </li>
+                                    <li data-category="stories">
+                                        Customer Stories
+                                        <span class="category-count">5</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Recent Posts -->
+                            <div class="sidebar-section">
+                                <h3 class="sidebar-title">Recent Posts</h3>
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=70&h=70&fit=crop"
+                                            alt="Recent post">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h6>10 Benefits of Eating Organic Food</h6>
+                                        <div class="recent-post-date">March 18, 2024</div>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=70&h=70&fit=crop"
+                                            alt="Recent post">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h6>Farm to Table: Our Process</h6>
+                                        <div class="recent-post-date">March 16, 2024</div>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="recent-post-image">
+                                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=70&h=70&fit=crop"
+                                            alt="Recent post">
+                                    </div>
+                                    <div class="recent-post-content">
+                                        <h6>Organic Gardening Tips for Beginners</h6>
+                                        <div class="recent-post-date">March 14, 2024</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="sidebar-section">
+                                <h3 class="sidebar-title">Popular Tags</h3>
+                                <div class="tag-cloud">
+                                    <a href="#" class="tag">Organic</a>
+                                    <a href="#" class="tag">Healthy</a>
+                                    <a href="#" class="tag">Recipes</a>
+                                    <a href="#" class="tag">Fresh</a>
+                                    <a href="#" class="tag">Natural</a>
+                                    <a href="#" class="tag">Nutrition</a>
+                                    <a href="#" class="tag">Seasonal</a>
+                                    <a href="#" class="tag">Farm</a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+
+    <!-- Script chung cho cac page Script chung cho cac page Script chung cho cac page Script chung cho cac page Script chung cho cac page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/fetch-header-footer.js"></script>
+    <script type="text/javascript" src="js/smooth-navbar.js"></script>
+    <script type="text/javascript" src="js/mobile.js"></script>
+    <!-- Script rieng cho tung page Script rieng cho tung page Script rieng cho tung page Script rieng cho tung page -->
+    <script type="text/javascript" src="js/blog.js"></script>
+        

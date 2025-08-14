@@ -1,5 +1,5 @@
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   background: #fff;
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   padding: 60px 20px;
   background-color: #ebebeb;
   position: relative;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .testimonial .avatar img {
@@ -25,7 +25,6 @@ body {
   justify-content: center;
   width: 100%;
 }
-
 
 .testimonial h2 {
   font-size: 24px;
@@ -67,10 +66,10 @@ body {
 }
 
 .blog-post {
-  width: calc((100% - 40px) / 3); 
+  width: calc((100% - 40px) / 3);
   background: #fff;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
 }

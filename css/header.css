@@ -1,276 +1,281 @@
+/* ===========================
+   HEADER & NAVBAR
+=========================== */
+:root {
+  --bs-navbar-nav-link-padding-x: 1.2rem !important;
+  --bs-navbar-padding-y: 0.8rem !important;
+}
+header {
+  background: linear-gradient(
+    135deg,
+    #a9dd75 0%,
+    #8bc34a 50%,
+    #7cb342 100%
+  ) !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  transition: all 0.3s ease !important;
+  border-bottom: none !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+header.scrolled {
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem 0 !important;
+  transition: padding 0.3s ease !important;
+  border-bottom: none !important;
+}
+.navbar .nav-link {
+  padding: 0.8rem 1.2rem !important;
+  margin: 0 0.2rem !important;
+}
+
 .navbar .navbar-collapse {
-            white-space: nowrap;
+  white-space: nowrap !important;
 }
 
-        header {
-            background: linear-gradient(135deg, #a9dd75 0%, #8bc34a 50%, #7cb342 100%);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        header.scrolled {
-            box-shadow: 0 4px 25px rgba(0,0,0,0.15);
-            backdrop-filter: blur(10px);
-        }
-
-        .navbar {
-            padding: 1rem 0;
-            transition: padding 0.3s ease;
-        }
-
-        /* Logo improvements */
-        .navbar-brand {
-            transition: transform 0.3s ease;
-        }
-
-        .navbar-brand:hover {
-            transform: scale(1.05);
-        }
-
-        .navbar-brand img {
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-            transition: filter 0.3s ease;
-        }
-
-        .navbar-brand:hover img {
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
-        }
-
-        /* Navigation links improvements */
-        .nav-link {
-            font-weight: 600;
-            color: #2c3e50 !important;
-            padding: 0.8rem 1.2rem !important;
-            margin: 0 0.2rem;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            font-size: 1.12rem;
-        }
-
-        .nav-link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .nav-link:hover::before {
-            left: 100%;
-        }
-
-        .nav-link:hover {
-            background-color: rgba(255,255,255,0.2);
-            color: #1a252f !important;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        /* Dropdown improvements */
-        .dropdown-menu {
-            border: none;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            border-radius: 12px;
-            padding: 0.5rem 0;
-            margin-top: 0.5rem;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-            animation: dropdownFadeIn 0.3s ease;
-        }
-        .navbar .dropdown-menu {
-            top: 100%; /* Vị trí gốc ngay dưới nút */
-            margin-top: -5px; /* Kéo sát lên luôn */
-        }
-
-        @keyframes dropdownFadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .dropdown-item {
-            padding: 0.7rem 1.5rem;
-            transition: all 0.3s ease;
-            color: #2c3e50;
-            font-weight: 500;
-            border-radius: 15px;
-        }
-
-        .dropdown-item:hover {
-            background: linear-gradient(135deg, #a9dd75, #8bc34a);
-            color: rgb(0, 0, 0);
-            transform: translateY(-2px);
-        }
-
-        /* Submenu improvements */
-        .dropdown-submenu {
-            position: relative;
-        }
-
-        .dropdown-submenu > .dropdown-menu {
-            top: 0;
-            left: 100%;
-            margin-left: 0.1rem;
-            animation: submenuSlideIn 0.3s ease;
-        }
-
-        @keyframes submenuSlideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-8px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .dropdown-submenu:hover > .dropdown-menu {
-            display: block;
-        }
-
-        /* Search improvements */
-        .search-container {
-            position: relative;
-        }
-
-        .search-container .form-control {
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 25px;
-            padding: 0.6rem 2.5rem 0.6rem 1rem;
-            background: rgba(255,255,255,0.9);
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .search-container .form-control:focus {
-            border-color: #7cb342;
-            box-shadow: 0 0 0 0.2rem rgba(124, 179, 66, 0.25), 0 4px 12px rgba(0,0,0,0.15);
-            background: white;
-        }
-
-        .search-container .btn {
-            position: absolute;
-            right: 5px;
-            top: 50%;
-            transform: translateY(-50%);
-            border: none;
-            background: linear-gradient(135deg, #7cb342, #8bc34a);
-            color: white;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        .search-container .btn:hover {
-            background: linear-gradient(135deg, #689f38, #7cb342);
-            transform: translateY(-50%) scale(1.1);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        /* Cart improvements */
-        .cart-link {
-            position: relative;
-            padding: 0.5rem;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            background: rgba(255,255,255,0.2);
-        }
-
-        .cart-link:hover {
-            background: rgba(255,255,255,0.3);
-            transform: scale(1.1);
-        }
-
-        .cart-link img {
-            filter: brightness(0.2);
-            transition: filter 0.3s ease;
-        }
-
-        .cart-link:hover img {
-            filter: brightness(0);
-        }
-
-        .cart-badge {
-            background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
-            font-size: 0.7rem;
-            font-weight: bold;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: translate(-50%, -50%) scale(1); }
-            50% { transform: translate(-50%, -50%) scale(1.1); }
-            100% { transform: translate(-50%, -50%) scale(1); }
-        }
-
-        /* Mobile improvements */
-        @media (max-width: 991.98px) {
-            .navbar-collapse {
-                background: rgba(255,255,255,0.95);
-                backdrop-filter: blur(10px);
-                border-radius: 12px;
-                padding: 1rem;
-                margin-top: 1rem;
-                box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            }
-            
-            .nav-link {
-                margin: 0.2rem 0;
-            }
-        }
-
-        /* Remove original border */
-        header,
-        header .navbar {
-            border-bottom: none !important;
-        }
-
-        /* Smooth scrolling effect */
-        html {
-            scroll-behavior: smooth;
-        }
-/* Smooth Section */
-.transition-section2 {
-    background: linear-gradient(#ebebeb, #fafafa);
-    height: 20px;
+/* Logo */
+.navbar-brand {
+  transition: transform 0.3s ease !important;
 }
-.transition-section1 {
-    background: linear-gradient(#fafafa, #ebebeb);
-    height: 20px;
+.navbar-brand:hover {
+  transform: scale(1.05) !important;
 }
-/* Hover để mở dropdown CHỈ trên màn hình >= 992px (desktop) */
+.navbar-brand img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) !important;
+  transition: filter 0.3s ease !important;
+}
+.navbar-brand:hover img {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)) !important;
+}
+
+/* Navigation links */
+.nav-link {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 600 !important;
+  color: #2c3e50 !important;
+  padding: 0.8rem 1.2rem !important;
+  margin: 0 0.2rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+  font-size: 1.12rem !important;
+  display: block !important;
+}
+.nav-link::before {
+  content: "";
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  ) !important;
+  transition: left 0.5s ease !important;
+}
+.nav-link:hover::before {
+  left: 100% !important;
+}
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #1a252f !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  border: none !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 12px !important;
+  padding: 0.5rem 0 !important;
+  margin-top: 0.5rem !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  animation: dropdownFadeIn 0.3s ease !important;
+}
+.navbar .dropdown-menu {
+  top: 100% !important;
+  margin-top: -5px !important;
+}
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dropdown item */
+.dropdown-item {
+  padding: 0.7rem 1.5rem !important;
+  transition: all 0.3s ease !important;
+  color: #2c3e50 !important;
+  font-weight: 500 !important;
+  border-radius: 15px !important;
+}
+.dropdown-item:hover {
+  background: linear-gradient(135deg, #a9dd75, #8bc34a) !important;
+  color: rgb(0, 0, 0) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Submenu */
+.dropdown-submenu {
+  position: relative !important;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0 !important;
+  left: 100% !important;
+  margin-left: 0.1rem !important;
+  animation: submenuSlideIn 0.3s ease !important;
+}
+@keyframes submenuSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block !important;
+}
+
+/* Hover dropdown only for desktop */
 @media (min-width: 992px) {
   .navbar .dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-  /* Nếu có submenu lồng nhau */
-  .navbar .dropdown-submenu {
-    position: relative;
+    display: block !important;
   }
   .navbar .dropdown-submenu:hover > .dropdown-menu {
-    display: block;
-    top: 0;
-    left: 100%;
-    margin-left: .1rem;
+    display: block !important;
+    top: 0 !important;
+    left: 100% !important;
+    margin-left: 0.1rem !important;
   }
 }
 
+/* Search */
+.search-container {
+  position: relative !important;
+}
+.search-container .form-control {
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 25px !important;
+  padding: 0.6rem 2.5rem 0.6rem 1rem !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+.search-container .form-control:focus {
+  border-color: #7cb342 !important;
+  box-shadow: 0 0 0 0.2rem rgba(124, 179, 66, 0.25),
+    0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  background: white !important;
+}
+.search-container .btn {
+  position: absolute !important;
+  right: 5px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  border: none !important;
+  background: linear-gradient(135deg, #7cb342, #8bc34a) !important;
+  color: white !important;
+  border-radius: 50% !important;
+  width: 35px !important;
+  height: 35px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+}
+.search-container .btn:hover {
+  background: linear-gradient(135deg, #689f38, #7cb342) !important;
+  transform: translateY(-50%) scale(1.1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
 
+/* Cart */
+.cart-link {
+  position: relative !important;
+  padding: 0.5rem !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.cart-link:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+  transform: scale(1.1) !important;
+}
+.cart-link img {
+  filter: brightness(0.2) !important;
+  transition: filter 0.3s ease !important;
+}
+.cart-link:hover img {
+  filter: brightness(0) !important;
+}
+.cart-badge {
+  background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
+  font-size: 0.7rem !important;
+  font-weight: bold !important;
+  animation: pulse 2s infinite !important;
+}
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Mobile */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    margin-top: 1rem !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  }
+  .nav-link {
+    margin: 0.2rem 0 !important;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Section transitions */
+.transition-section1 {
+  background: linear-gradient(#fafafa, #ebebeb) !important;
+  height: 20px !important;
+}
+.transition-section2 {
+  background: linear-gradient(#ebebeb, #fafafa) !important;
+  height: 20px !important;
+}

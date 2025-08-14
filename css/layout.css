@@ -1,19 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 body {
-    background-color: #fafafa;
-    font-size: 14px;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 400;
-    line-height: 1.35;
-    text-align: left;
+  background-color: #fafafa;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 /* a{
     text-decoration: none;
@@ -22,38 +22,38 @@ img {
 a:hover{
     color: rgb(24, 162, 24);
 } */
-p{
-    margin-bottom: 10px;
+p {
+  margin-bottom: 10px;
 }
 /* Layout */
-.section{
-    float: left;
-    width: 100%;
+.section {
+  float: left;
+  width: 100%;
 }
 .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px; /* thêm khoảng đệm khi màn hình nhỏ */
-    box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; /* thêm khoảng đệm khi màn hình nhỏ */
+  box-sizing: border-box;
 }
 
 /* End */
 /* Content */
-.a-left{
-    float: left;
-    width: 25%;
+.a-left {
+  float: left;
+  width: 25%;
 }
-.a-right{
-    float: right;
-    width: 25%;
+.a-right {
+  float: right;
+  width: 25%;
 }
-.content{
-    float: left;
-    width: 75%;
+.content {
+  float: left;
+  width: 75%;
 }
-.three-column .content{
-    width: 50%;
+.three-column .content {
+  width: 50%;
 }
 /* @media screen and (maxwidth: 1200px) {
     .container{

@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .hero {
@@ -25,7 +26,10 @@ body, html {
 .hero::after {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
@@ -56,7 +60,7 @@ body, html {
 .hero-content-button {
   text-decoration: none;
   background-color: #ffffff;
-  color: #4CAF50;
+  color: #4caf50;
   padding: 10px 25px;
   border-radius: 25px;
   font-weight: bold;
@@ -137,28 +141,27 @@ body, html {
 }
 
 .filters {
-    text-align: center;
-    margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .filters button {
-    background: transparent;
-    border: 2px solid #8bc34a;
-    color: #8bc34a;
-    padding: 0.8rem 2rem;
-    margin: 0.5rem;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  background: transparent;
+  border: 2px solid #8bc34a;
+  color: #8bc34a;
+  padding: 0.8rem 2rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.filters button:ho
-.filters button.active {
-    background: #8bc34a;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(139, 195, 74, 0.3);
+.filters button:ho .filters button.active {
+  background: #8bc34a;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(139, 195, 74, 0.3);
 }
 
 .product-grid {
@@ -206,7 +209,7 @@ body, html {
   color: #b9d7a9;
   font-size: 14px;
 }
-.product-section-menu{
+.product-section-menu {
   background-color: #ebebeb;
   padding: 25px 0px 1px;
 }

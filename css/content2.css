@@ -1,75 +1,73 @@
-
-.section{
-    float: left;
-    width: 100%;
+.section {
+  float: left;
+  width: 100%;
 }
-.container{
-    float: none;
-    margin: 0 auto;
-    width: 1200px;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(76, 73, 73);
-}
-a:hover{
-    color: rgb(24, 162, 24);
+.container {
+  float: none;
+  margin: 0 auto;
+  width: 1200px;
 }
 
-.farmservices{
-    text-align: center;
+a {
+  text-decoration: none;
+  color: rgb(76, 73, 73);
 }
-.farmservices div{
-    width: calc(25%);
-    float: left;
-    text-align: center;
+a:hover {
+  color: rgb(24, 162, 24);
 }
-.farmservices h2{
-    font-size: 42px;
+
+.farmservices {
+  text-align: center;
 }
-.farmservices h4{
+.farmservices div {
+  width: calc(25%);
+  float: left;
+  text-align: center;
+}
+.farmservices h2 {
+  font-size: 42px;
+}
+.farmservices h4 {
   font-size: 18px;
   font-style: italic;
   color: #8bb74a;
   margin-bottom: 20px;
 }
-.hr1{
-    width: 20px;
-    margin: 0 auto;
+.hr1 {
+  width: 20px;
+  margin: 0 auto;
 }
-.d-a{
-    float: left;
-    width: 40%;
-    position: relative;
+.d-a {
+  float: left;
+  width: 40%;
+  position: relative;
 }
 .d-a img {
   display: block;
   width: 370px;
   height: 480px;
-
 }
 
 .price-tag {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    background-color: #8bb74a;
-    color: white;
-    font-weight: bold;
-    padding: 25px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 1.4;
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    font-size: 18px;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  background-color: #8bb74a;
+  color: white;
+  font-weight: bold;
+  padding: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.4;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 18px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .d-b {
   width: 60%;
@@ -84,9 +82,7 @@ a:hover{
   line-height: 1.1;
   margin-top: 160px;
   margin-bottom: 10px;
-  
 }
-
 
 .d-b h4 {
   font-size: 18px;
@@ -95,14 +91,12 @@ a:hover{
   margin-bottom: 20px;
 }
 
-
 .d-b p {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
 
 .add-to-cart a {
   display: inline-block;
@@ -118,15 +112,15 @@ a:hover{
 .add-to-cart a:hover {
   background-color: #6c9c3b;
 }
-.content2{
+.content2 {
   padding-bottom: 82px;
 }
 .farmservices_content2 {
   background-color: #ebebeb;
 }
-.farmservices_content{
+.farmservices_content {
   padding-bottom: 20px;
 }
-.farmservices_item{
+.farmservices_item {
   padding-bottom: 15px;
 }
