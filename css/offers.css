@@ -21,6 +21,12 @@ body {
 /* Hero Section */
 .offers-hero {
   background: linear-gradient(135deg, var(--cream) 0%, var(--light-cream) 100%);
+  background-image: url(../images/veg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 120px 0 80px;
   text-align: center;
   position: relative;
@@ -50,7 +56,7 @@ body {
 .offers-hero h1 {
   font-family: "Playfair Display", serif;
   font-size: 3.5rem;
-  color: var(--primary-green);
+  color: var(--light-green);
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
@@ -58,7 +64,7 @@ body {
 
 .offers-hero p {
   font-size: 1.25rem;
-  color: var(--text-light);
+  color: var(--cream);
   max-width: 600px;
   margin: 0 auto 30px;
   position: relative;
