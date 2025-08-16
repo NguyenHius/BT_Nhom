@@ -279,3 +279,25 @@ html {
   background: linear-gradient(#ebebeb, #fafafa) !important;
   height: 20px !important;
 }
+/* Login and Register Links  */
+.auth-links {
+  font-size: 0.75rem !important;
+  margin-top: 3px !important;
+  white-space: nowrap !important;
+}
+
+.auth-links a {
+  color: #2c3e50 !important;
+  text-decoration: underline !important;
+  margin: 0 0.2rem !important;
+  font-weight: 500 !important;
+  transition: color 0.3s ease !important;
+}
+
+.auth-links a:hover {
+  color: #1a252f !important;
+  text-decoration: underline !important;
+}
+.search-cart-container {
+  transform: translateY(10%) !important;
+}
