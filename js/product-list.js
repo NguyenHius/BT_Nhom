@@ -104,9 +104,11 @@ function displayProducts(products) {
                 : ""
             }
             <div class="heart" onclick="toggleWishlist(${product.id})">♥</div>
-            <img src="../images/organic-img/${product.name.toLowerCase() // viết thường
+            <img src="images/organic-img/${
+              product.name
+                .toLowerCase() // viết thường
                 .replace(/\s+/g, "-") // thay khoảng trắng thành dấu -
-                }.jpg" alt="${product.name}" />
+            }.jpg" alt="${product.name}" />
             <div class="product-info">
                 <h4>${product.name}</h4>
                 <p class="product-description">${product.description}</p>
