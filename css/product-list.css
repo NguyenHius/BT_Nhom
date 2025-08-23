@@ -14,8 +14,8 @@
   inset: 0;
   background: url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=2074&q=80")
     center/cover no-repeat;
-  filter: blur(3px) brightness(0.9); /* mờ + tối nhẹ */
-  transform: scale(1.05); /* tránh viền mờ ở rìa */
+  filter: blur(3px) brightness(0.9);
+  transform: scale(1.05);
   z-index: 0;
 }
 
